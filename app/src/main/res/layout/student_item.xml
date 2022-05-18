@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="8dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="ID :"
+            android:textSize="24sp"
+            android:id="@+id/labelID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/labelID"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:text="-"
+            android:textSize="24sp"
+            android:id="@+id/tvID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/labelID"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Nama :"
+            android:textSize="24sp"
+            android:id="@+id/labelNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/labelNama"
+            app:layout_constraintTop_toTopOf="@id/labelNama"
+            app:layout_constraintBottom_toBottomOf="@id/labelNama"
+            android:layout_marginStart="8dp"
+            android:text="-"
+            android:textSize="24sp"
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/labelNama"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Email :"
+            android:textSize="24sp"
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/labelEmail"
+            app:layout_constraintTop_toTopOf="@id/labelEmail"
+            app:layout_constraintBottom_toBottomOf="@id/labelEmail"
+            android:layout_marginStart="8dp"
+            android:text="-"
+            android:textSize="24sp"
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
